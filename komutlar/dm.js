@@ -7,8 +7,7 @@ exports.run = function(client, message, args) {
     if (!dm) return message.channel.send(':x: **DM Atcağım Yazıyı Unuttun!**');
     message.delete();
     const dmat = new Discord.RichEmbed()
-    .setColor('RANDOM')
-    .addField(`${dm}`)
+    .setFooter(`${dm}`)
     dmkisi.sendEmbed(dmat);
     const dmtamam = new Discord.RichEmbed()
     .setColor('RANDOM')
